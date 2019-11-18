@@ -1,7 +1,9 @@
-<% cart.each do |item| %>
-<%= item %>
-<%end%>
 
+<ul>
+<% cart.each do |item| %>
+<li><%= item %></li>
+<%end%>
+</ul>
 <%= form_tag ({controller: 'products',
     action: 'add',
     method: 'post'}) do %>
