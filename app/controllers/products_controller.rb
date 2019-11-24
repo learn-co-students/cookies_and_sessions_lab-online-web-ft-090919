@@ -8,5 +8,9 @@ class ProductsController < ApplicationController
         redirect_to root_path
     end
 
+    # def cart
+    #     super
+    # end
+
 end
 
