@@ -1,0 +1,16 @@
+<h1>Your Cart</h1>
+<ul>
+<% if !@cart.nil? %>
+    <% @cart.each do |item| %>
+        <li><%= item %></li>
+    <% end %>
+<% end %>
+</ul>
+
+<br>
+
+<%= form_tag("/products") do %>
+    Item Name: <%= text_field_tag "item" %>
+    <%= submit_tag "Add Item to Cart" %>
+
+<% end %>
